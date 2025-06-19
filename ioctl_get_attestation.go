@@ -12,11 +12,6 @@ import (
 	"golang.org/x/sys/unix"
 )
 
-const (
-	GUEST_ATTESTATION_DATA_SIZE  = 64
-	GUEST_ATTESTATION_NONCE_SIZE = 16
-)
-
 // CsvGuestMem is csv_guest_mem
 type CsvGuestMem struct {
 	Va   uintptr

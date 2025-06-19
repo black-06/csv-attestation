@@ -56,6 +56,9 @@ const (
 	CsvCertSize              = int(unsafe.Sizeof(CsvCert{}))
 	CsvAttestationReportSize = int(unsafe.Sizeof(CsvAttestationReport{}))
 
+	GUEST_ATTESTATION_DATA_SIZE  = 64
+	GUEST_ATTESTATION_NONCE_SIZE = 16
+
 	CHIP_KEY_ID_LEN     = 16
 	SIZE_INT32          = 4
 	SIZE_24             = 24
