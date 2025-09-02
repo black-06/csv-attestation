@@ -128,7 +128,7 @@ func doRequest(url string) ([]byte, error) {
 		return nil, errors.Wrap(err, "request failed")
 	}
 	if resp.StatusCode != http.StatusOK {
-		return nil, errors.Wrapf(err, "request failed, status: %d", resp.StatusCode)
+		return nil, errors.Errorf("request failed, status: %d", resp.StatusCode)
 	}
 	defer func() { _ = resp.Body.Close() }()
 	return io.ReadAll(resp.Body)
